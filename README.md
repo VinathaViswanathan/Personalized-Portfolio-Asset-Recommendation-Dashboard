@@ -68,6 +68,7 @@ Embedded FAQ logic to assist users
 ## Requirements
 Ensure the following packages are installed (via requirements.txt or pip install):
 
+'''
 bash
 Copy
 Edit
@@ -79,6 +80,7 @@ seaborn
 scikit-learn
 scipy
 PyPortfolioOpt
+'''
 
 
 ## Future Developments
