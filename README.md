@@ -42,3 +42,47 @@ Used when user has too few assets or data is sparse
 
 ### 3. Hybrid Recommendation
 Automatically switches between SVD-based and fallback depending on data availability
+
+
+## Implementation Details
+### Portfolio Optimization
+Library: pypfopt
+Methods: efficient_risk, min_volatility
+Handles edge cases (e.g., low asset count, infeasible volatility targets)
+
+### Recommender System
+SVD via sklearn.decomposition.TruncatedSVD
+Similarity: sklearn.metrics.pairwise.cosine_similarity
+Fallback logic ensures robust output even for cold-start users
+
+### Front-End: Streamlit
+Fully interactive layout with sidebar filtering
+Context-aware visualizations, including heatmaps and pie/bar charts
+Embedded FAQ logic to assist users
+
+
+## Requirements
+Ensure the following packages are installed (via requirements.txt or pip install):
+
+bash
+Copy
+Edit
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+scipy
+PyPortfolioOpt
+
+
+## Future Developments
+1. Real-time market data integration via financial APIs
+2. Transaction simulation and automated portfolio rebalancing
+3. Integration of advanced risk models (e.g., Monte Carlo, Black-Litterman, VaR)
+4. Enhanced recommender systems using neural collaborative filtering and autoencoders
+5. User authentication and session management with persistent dashboards
+6. Mobile and multi-device UI optimization
+7. Containerization and deployment using Docker and cloud platforms
+8. Explainable AI features for transparent recommendation insights
