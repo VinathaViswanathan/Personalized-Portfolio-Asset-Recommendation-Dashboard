@@ -6,6 +6,9 @@ This project is a Streamlit-based financial analytics dashboard that empowers in
 
 The app combines techniques from quantitative finance, machine learning, and recommender systems, offering both transparency and interactivity.
 
+![Uploading image.png…]()
+
+
 ## Dataset
 The app uses 4 key CSV datasets located in the FAR-Trans-Data/ directory:
 
