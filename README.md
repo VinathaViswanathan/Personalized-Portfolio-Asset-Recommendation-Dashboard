@@ -33,6 +33,7 @@ Expected return vs volatility (risk-return scatter)
 Asset volatilities and correlation matrix
 
 ## Asset Recommendation Engine
+<img width="1990" height="498" alt="Image" src="https://github.com/user-attachments/assets/17b1945d-e68a-4f7d-ab78-2ee0db4e8de5" />
 ### 1. Collaborative Filtering (SVD-based)
 Leverages Truncated SVD on customer-asset interaction matrix
 Computes cosine similarity to recommend assets based on similar investors
