@@ -17,28 +17,28 @@ transactions.csv – Buy transaction records linking customers to assets.
 These datasets simulate a structured financial system that allows historical analysis and personalized recommendations.
 
 
-### Key Features
-## Portfolio Optimization
+## Key Features
+### Portfolio Optimization
 Uses mean historical returns and sample covariance to optimize weights.
 Supports target volatility optimization using pypfopt.EfficientFrontier.
 Falls back to minimum volatility portfolios if optimization fails.
 
-## Visualizes:
+Visualizes:
 
 Asset allocation weights
 Expected return vs volatility (risk-return scatter)
 Asset volatilities and correlation matrix
 
 ## Asset Recommendation Engine
-# 1. Collaborative Filtering (SVD-based)
+### 1. Collaborative Filtering (SVD-based)
 Leverages Truncated SVD on customer-asset interaction matrix
 Computes cosine similarity to recommend assets based on similar investors
 Provides confidence score and qualitative reasoning (e.g., peer ownership, sector match)
 
-# 2. Fallback Strategy
+### 2. Fallback Strategy
 Recommends popular assets not held by user
 Filters for sector alignment to ensure contextual relevance
 Used when user has too few assets or data is sparse
 
-# 3. Hybrid Recommendation
+### 3. Hybrid Recommendation
 Automatically switches between SVD-based and fallback depending on data availability
