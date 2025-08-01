@@ -69,9 +69,6 @@ Embedded FAQ logic to assist users
 Ensure the following packages are installed (via requirements.txt or pip install):
 
 ```
-bash
-Copy
-Edit
 streamlit
 pandas
 numpy
@@ -82,7 +79,11 @@ scipy
 PyPortfolioOpt
 ```
 
+## Applcation Startup
 
+```
+stream run <location of app1.py>
+```
 ## Future Developments
 1. Real-time market data integration via financial APIs
 2. Transaction simulation and automated portfolio rebalancing
