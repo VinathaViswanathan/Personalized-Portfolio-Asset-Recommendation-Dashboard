@@ -1,0 +1,42 @@
+flowchart LR
+    subgraph Data Sources
+        A[Customer Information]
+        B[Asset Information]
+        C[Transaction Records]
+        D[Price and Profitability Data]
+    end
+
+    subgraph Preprocessing & Feature Engineering
+        A -->|Clean & Aggregate| F(Customer Profiles)
+        B -->|Encode Features| G(Asset Features)
+        C -->|Filter & Aggregate| H(User-Asset Interaction Matrix)
+        D -->|Merge with Asset Info| G
+    end
+
+    subgraph Recommendation Engines
+        H -->|Matrix Factorization (SVD)| J(Collaborative Filtering Scores)
+        G -->|Cosine Similarity| K(Content-Based Scores)
+        F -->|Risk & Demographic Matching| L(Demographic Scores)
+    end
+
+    subgraph Score Aggregation
+        J --> M[Normalize Scores]
+        K --> M
+        L --> M
+        M -->|Weighted Sum| N(Final Recommendation Scores)
+        N -->|Top-N Filtering| O(Top-N Asset Recommendations)
+    end
+
+    subgraph User Interaction & Portfolio Optimization
+        O --> P[Streamlit Dashboard]
+        P -->|User Inputs| Q[Risk Level, Target Volatility, Filters]
+        Q --> R[Portfolio Optimization Module]
+        R --> S[Optimized Portfolio Weights]
+        S --> P
+        P --> T[Visualizations: Allocation Pie, Performance Chart, Confidence Scores, Explanations]
+    end
+
+    subgraph Feedback Loop
+        P --> U[Questionnaire Responses]
+        U --> F
+    end
