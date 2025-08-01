@@ -6,7 +6,7 @@ This project is a Streamlit-based financial analytics dashboard that empowers in
 
 The app combines techniques from quantitative finance, machine learning, and recommender systems, offering both transparency and interactivity.
 
-![Uploading image.png…]()
+<img width="2940" height="1596" alt="Image" src="https://github.com/user-attachments/assets/cc6a6209-fee1-4728-8192-664bc850cbb7" />
 
 
 ## Dataset
